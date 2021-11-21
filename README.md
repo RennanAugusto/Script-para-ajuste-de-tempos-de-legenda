@@ -1,0 +1,1 @@
+# Script-para-ajuste-de-tempos-de-legenda
