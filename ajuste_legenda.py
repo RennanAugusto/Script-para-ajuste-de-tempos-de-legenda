@@ -51,37 +51,4 @@ class Adjust_Subtitles():
 
 ajuste = Adjust_Subtitles('Venom.srt', 1)
 ajuste.adjust_subtitles()
-# nome_arquivo = 'Venom.srt'
-# arquivo = open(nome_arquivo, 'r')
-# format = '%H:%M:%S,%f'
-# percentual = 1 / 100
-#
-# buffer = StringIO()
-#
-# for line in arquivo:
-#     if line.__contains__('-->'):
-#         line_aux = line.split('-->')
-#         new_line = ''
-#         for hour in line_aux:
-#             hour = hour.replace(' ', '')
-#             hour = hour.replace('\n', '')
-#             hour_aux = dt.datetime.strptime(hour, '%H:%M:%S,%f')
-#             teste = dt.timedelta(seconds=hour_aux.second, hours=hour_aux.hour, minutes=hour_aux.minute, microseconds=hour_aux.microsecond)
-#             # hour_aux = hour_aux.timed
-#             # hour_aux = hour_aux * percentual
-#             hour_aux = teste + (teste * percentual)
-#             hour_str = hour_aux.__str__()
-#             hour_str = hour_str[:-3]
-#             new_line += (hour_str + ' --> ' if new_line == '' else hour_str + '\n')
-#         buffer.write(new_line)
-#     else:
-#         buffer.write(line)
-#
-# arquivo.close()
-#
-# arquivo = open(nome_arquivo, 'w')
-# str = buffer.getvalue()
-# arquivo.write(buffer.getvalue())
-#
-# arquivo.close()
 
